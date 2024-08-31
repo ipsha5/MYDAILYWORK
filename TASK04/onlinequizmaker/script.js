@@ -1,29 +1,29 @@
 //Question bank
 var questionBank= [
     {
-        question : 'Eritrea, which became the 182nd member of the UN in 1993, is in the continent of',
-        option : ['Asia','Africa','Europe','Australia'],
-        answer : 'Africa'
+        question : 'Which planet is known as the Red Planet?',
+        option : ['Earth', 'Mars', 'Jupiter', 'Saturn'],
+        answer : 'Mars'
      },
     {
-        question : 'Garampani sanctuary is located at',
-        option : ['Junagarh, Gujarat','Diphu, Assam','Kohima, Nagaland','Gangtok, Sikkim'],
-        answer : 'Diphu, Assam'
+        question: 'What is the capital city of Australia?',
+        option: ['Sydney', 'Melbourne', 'Canberra', 'Brisbane'],
+        answer: 'Canberra'
     },
     {
-        question : 'For which of the following disciplines is Nobel Prize awarded?',
-        option : ['Physics and Chemistry','Physiology or Medicine','Literature, Peace and Economics','All of the above'],
-        answer : 'All of the above'
+        question: 'Who wrote the play "Romeo and Juliet"?',
+        option: ['William Shakespeare', 'Charles Dickens', 'Jane Austen', 'Mark Twain'],
+        answer: 'William Shakespeare'
     },
     {
-        question : 'Hitler party which came into power in 1933 is known as',
-        option : ['Labour Party','Nazi Party','Ku-Klux-Klan','Democratic Party'],
-        answer : 'Nazi Party'
+        question: 'What is the largest ocean on Earth?',
+        option: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
+        answer: 'Pacific Ocean'
     },
     {
-        question : 'First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in',
-        option : ['1967','1968','1958','1922'],
-        answer : '1967'
+        question: 'Which element has the chemical symbol "Au"?',
+        option: ['Silver', 'Gold', 'Copper', 'Iron'],
+        answer: 'Gold'
     }
 ]
 
@@ -58,10 +58,10 @@ function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById(e.id).style.background= 'limegreen';
+        document.getElementById(e.id).style.background= 'yellow';
     }
     else{
-        document.getElementById(e.id).style.background= 'tomato';
+        document.getElementById(e.id).style.background = "flower";
     }
     setTimeout(nextQuestion,300);
 }
